@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elodie Ouédraogo — Développeuse Full-Stack Web &amp; Mobile</title>
+<meta name="description" content="Portfolio d'Elodie Ouédraogo, développeuse full-stack (Django/DRF, React.js, Flutter) basée à Saaba.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="assets/photo.jpeg" class="logo">
+      <span class="logo-mark">EO</span>
+      <span class="logo-text"><span class="dot">O.</span>Elodie</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top" class="active">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-pill btn-outline-dark header-cta">Me contacter</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow-tag">Bonjour, bienvenue !</span>
+        <h1 class="hero-title">
+          Je suis <span class="accent-italic">Elodie&nbsp;Ouédraogo,</span>
+          <span class="hero-title-line2">Développeuse Full-Stack<br>Web &amp; Mobile.</span>
+        </h1>
+        <p class="hero-desc">
+          Diplômée en MIAGE de l'IBAM, je conçois et développe des applications web
+          et mobiles complètes. </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-pill btn-dark">
+            Voir mes projets
+            <span class="btn-icon-circle"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+          <a href="#contact" class="btn btn-pill btn-outline-dark">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-blob">
+          <svg class="hero-illustration" viewBox="0 0 420 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="70" y="70" width="280" height="200" rx="16" fill="#12261B"/>
+            <rect x="70" y="70" width="280" height="34" rx="16" fill="#1E3A2A"/>
+            <circle cx="90" cy="87" r="5" fill="#F2A93C"/>
+            <circle cx="106" cy="87" r="5" fill="#EFE6D8"/>
+            <circle cx="122" cy="87" r="5" fill="#3E5C48"/>
+            <text x="95" y="140" font-family="monospace" font-size="14" fill="#F2A93C">const dev = {</text>
+            <text x="110" y="162" font-family="monospace" font-size="14" fill="#EFE6D8">name: "Elodie",</text>
+            <text x="110" y="184" font-family="monospace" font-size="14" fill="#EFE6D8">stack: ["Django",</text>
+            <text x="128" y="206" font-family="monospace" font-size="14" fill="#EFE6D8">"React", "Flutter"],</text>
+            <text x="110" y="228" font-family="monospace" font-size="14" fill="#EFE6D8">base: "Saaba"</text>
+            <text x="95" y="250" font-family="monospace" font-size="14" fill="#F2A93C">};</text>
+            <rect x="130" y="300" width="180" height="120" rx="14" fill="#F2A93C"/>
+            <rect x="152" y="322" width="136" height="10" rx="5" fill="#12261B" opacity=".85"/>
+            <rect x="152" y="344" width="100" height="10" rx="5" fill="#12261B" opacity=".55"/>
+            <rect x="152" y="366" width="118" height="10" rx="5" fill="#12261B" opacity=".55"/>
+            <rect x="152" y="392" width="70" height="20" rx="10" fill="#12261B"/>
+          </svg>
+        </div>
+        <span class="chip chip-1">Backend Developer</span>
+        <span class="chip chip-2">Mobile Developer</span>
+        <div class="ring-badge">
+          <svg viewBox="0 0 200 200" class="ring-badge-svg">
+            <defs><path id="ringPath" d="M 100,100 m -80,0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"/></defs>
+            <text font-size="13.5" fill="#12261B" letter-spacing="2">
+              <textPath href="#ringPath">DISPONIBLE • OUVERTE AUX OPPORTUNITÉS • DISPONIBLE •</textPath>
+            </text>
+          </svg>
+          <span class="ring-badge-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="#12261B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE RIBBON ============ -->
+  <div class="ribbon">
+    <div class="ribbon-track">
+      <span>Laravel · PHP</span><span class="dot-sep">✳</span>
+      <span>React.js · Javascript</span><span class="dot-sep">✳</span>
+      <span>Flutter</span><span class="dot-sep">✳</span>
+      <span>MySQL</span><span class="dot-sep">✳</span>
+      <span>Figma</span><span class="dot-sep">✳</span>
+      <span>Git &amp; GitHub</span><span class="dot-sep">✳</span>
+      <span>Django · Python</span><span class="dot-sep">✳</span>
+      <span>React.js · Javascript</span><span class="dot-sep">✳</span>
+      <span>Flutter</span><span class="dot-sep">✳</span>
+      <span>MySQL</span><span class="dot-sep">✳</span>
+      <span>Figma</span><span class="dot-sep">✳</span>
+      <span>Git &amp; GitHub</span><span class="dot-sep">✳</span>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">— Services</span>
+          <h2 class="section-title">Ce que je <span class="accent-italic">propose</span></h2>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h16" stroke="#12261B" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Développement Backend</h3>
+          <p>APIs robustes et sécurisées avec Laravel &amp; Laravel REST Framework, modélisation MySQL.</p>
+          <a href="#projets" class="card-link">Voir un exemple <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2" stroke="#12261B" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="#12261B" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Développement Frontend</h3>
+          <p>Interfaces web réactives et soignées avec React.js et Vite, maquettées au préalable sous Figma.</p>
+          <a href="#projets" class="card-link">Voir un exemple <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="2.5" stroke="#12261B" stroke-width="2"/><path d="M11 18h2" stroke="#12261B" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Développement Mobile</h3>
+          <p>Applications mobiles multiplateformes avec Flutter, du prototype à la mise en production.</p>
+          <a href="#projets" class="card-link">Voir un exemple <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="apropos">
+    <div class="wrap about-inner">
+      <div class="about-visual">
+        <div class="about-circle">
+    <img src="assets/photo.jpeg" alt="Photo d'Elodie Ouédraogo" class="about-photo">
+  </div>
+        <span class="float-pill fp-1">React.js</span>
+        <span class="float-pill fp-2">Flutter</span>
+        <span class="float-pill fp-3">Django</span>
+        <span class="float-pill fp-4">PostgreSQL</span>
+        <span class="float-pill fp-5">Figma</span>
+      </div>
+
+      <div class="about-copy">
+        <span class="section-kicker light">— À propos</span>
+        <h2 class="section-title light">Qui est <span class="accent-italic">Elodie Ouédraogo</span> ?</h2>
+        <p class="about-text">
+          Titulaire d'une licence en MIAGE (Méthodes Informatiques Appliquées à la Gestion
+          des Entreprises) obtenue à l'Institut Burkinabé des Arts et Métiers (IBAM), je conçois
+          des solutions numériques de bout en bout : de la modélisation des besoins à la mise
+          en production, côté serveur comme côté interface.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Technologies maîtrisées</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Licence MIAGE — IBAM</span>
+          </div>
+        </div>
+        <div class="about-actions">
+          <a href="assets/cv.pdf" class="btn btn-pill btn-gold" id="cvDownload">
+            Télécharger mon CV
+            <span class="btn-icon-circle btn-icon-circle-dark"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+          <span class="signature">Elodie Ouédraogo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <section class="section" id="outils">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">— Mes outils</span>
+        <h2 class="section-title">Les technologies <span class="accent-italic">derrière mes projets</span></h2>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool" data-percent="88">
+          <div class="tool-ring"><span class="tool-icon">Fi</span><svg class="ring-svg" viewBox="0 0 80 80"><circle class="ring-bg" cx="40" cy="40" r="34"/><circle class="ring-fg" cx="40" cy="40" r="34"/></svg></div>
+          <span class="tool-percent">88%</span>
+          <span class="tool-name">Figma</span>
+        </div>
+        <div class="tool" data-percent="90">
+          <div class="tool-ring"><span class="tool-icon">Dj</span><svg class="ring-svg" viewBox="0 0 80 80"><circle class="ring-bg" cx="40" cy="40" r="34"/><circle class="ring-fg" cx="40" cy="40" r="34"/></svg></div>
+          <span class="tool-percent">90%</span>
+          <span class="tool-name">Django / Python</span>
+        </div>
+        <div class="tool" data-percent="85">
+          <div class="tool-ring"><span class="tool-icon">Re</span><svg class="ring-svg" viewBox="0 0 80 80"><circle class="ring-bg" cx="40" cy="40" r="34"/><circle class="ring-fg" cx="40" cy="40" r="34"/></svg></div>
+          <span class="tool-percent">85%</span>
+          <span class="tool-name">React.js / Javascript</span>
+        </div>
+        <div class="tool" data-percent="82">
+          <div class="tool-ring"><span class="tool-icon">Fl</span><svg class="ring-svg" viewBox="0 0 80 80"><circle class="ring-bg" cx="40" cy="40" r="34"/><circle class="ring-fg" cx="40" cy="40" r="34"/></svg></div>
+          <span class="tool-percent">82%</span>
+          <span class="tool-name">Flutter</span>
+        </div>
+        <div class="tool" data-percent="86">
+          <div class="tool-ring"><span class="tool-icon">Pg</span><svg class="ring-svg" viewBox="0 0 80 80"><circle class="ring-bg" cx="40" cy="40" r="34"/><circle class="ring-fg" cx="40" cy="40" r="34"/></svg></div>
+          <span class="tool-percent">86%</span>
+          <span class="tool-name">MySQL</span>
+        </div>
+        <div class="tool" data-percent="90">
+          <div class="tool-ring"><span class="tool-icon">Gh</span><svg class="ring-svg" viewBox="0 0 80 80"><circle class="ring-bg" cx="40" cy="40" r="34"/><circle class="ring-fg" cx="40" cy="40" r="34"/></svg></div>
+          <span class="tool-percent">90%</span>
+          <span class="tool-name">Git / GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projets">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">— Mon portfolio</span>
+          <h2 class="section-title">Mes dernières <span class="accent-italic">réalisations</span></h2>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-media">
+            <svg viewBox="0 0 400 260" class="project-thumb" aria-hidden="true">
+              <rect width="400" height="260" fill="#12261B"/>
+              <rect x="28" y="28" width="200" height="150" rx="10" fill="#1E3A2A"/>
+              <rect x="28" y="28" width="200" height="26" rx="10" fill="#F2A93C"/>
+              <rect x="44" y="72" width="150" height="8" rx="4" fill="#EFE6D8"/>
+              <rect x="44" y="90" width="120" height="8" rx="4" fill="#3E5C48"/>
+              <rect x="44" y="108" width="168" height="60" rx="6" fill="#12261B"/>
+              <rect x="56" y="122" width="120" height="6" rx="3" fill="#F2A93C" opacity=".7"/>
+              <rect x="56" y="136" width="90" height="6" rx="3" fill="#EFE6D8" opacity=".5"/>
+              <rect x="56" y="150" width="100" height="6" rx="3" fill="#EFE6D8" opacity=".5"/>
+              <circle cx="310" cy="90" r="52" fill="#F2A93C"/>
+              <path d="M292 92l14 14 24-28" stroke="#12261B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <rect x="252" y="164" width="120" height="70" rx="10" fill="#EFE6D8"/>
+              <rect x="266" y="178" width="80" height="7" rx="3.5" fill="#12261B" opacity=".7"/>
+              <rect x="266" y="194" width="60" height="7" rx="3.5" fill="#12261B" opacity=".4"/>
+              <rect x="266" y="210" width="46" height="14" rx="7" fill="#12261B" opacity=".85"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="tag-row">
+              <span class="tag">Django · DRF</span><span class="tag">React.js</span><span class="tag">PostgreSQL · pgvector</span>
+            </div>
+            <h3>PLAGIAT-IBAM</h3>
+            <p>Application web de détection de plagiat conçue pour l'IBAM — mon projet phare, lié à mon projet
+              tuteuré et mon rapport de stage. Analyse sémantique par NLP (sentence-transformers + pgvector),
+              circuit de validation à 3 niveaux, traitement asynchrone via Celery/Redis, authentification JWT.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <svg viewBox="0 0 400 260" class="project-thumb" aria-hidden="true">
+              <rect width="400" height="260" fill="#EFE6D8"/>
+              <rect x="24" y="24" width="352" height="40" rx="10" fill="#12261B"/>
+              <circle cx="46" cy="44" r="8" fill="#F2A93C"/>
+              <rect x="24" y="80" width="168" height="156" rx="10" fill="#fff" stroke="#E3D8C4" stroke-width="1"/>
+              <rect x="40" y="98" width="120" height="8" rx="4" fill="#12261B" opacity=".7"/>
+              <rect x="40" y="116" width="90" height="8" rx="4" fill="#3E5C48" opacity=".6"/>
+              <rect x="40" y="150" width="136" height="60" rx="8" fill="#F2A93C" opacity=".25"/>
+              <rect x="208" y="80" width="168" height="70" rx="10" fill="#fff" stroke="#E3D8C4" stroke-width="1"/>
+              <rect x="224" y="98" width="100" height="8" rx="4" fill="#12261B" opacity=".7"/>
+              <rect x="224" y="116" width="60" height="20" rx="10" fill="#F2A93C"/>
+              <rect x="208" y="158" width="168" height="78" rx="10" fill="#12261B"/>
+              <rect x="224" y="176" width="100" height="8" rx="4" fill="#EFE6D8"/>
+              <rect x="224" y="194" width="130" height="7" rx="3.5" fill="#EFE6D8" opacity=".5"/>
+              <rect x="224" y="210" width="70" height="16" rx="8" fill="#F2A93C"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="tag-row"><span class="tag">Concept produit</span><span class="tag">Fintech inclusive</span></div>
+            <h3>SaheLink</h3>
+            <p>Super-plateforme pensée pour le Youth Connekt Sahel 2026 (axe inclusion économique) :
+              marketplace, portefeuille numérique, formation et gestion d'activité réunis pour les
+              jeunes des 10 pays du Sahel.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <svg viewBox="0 0 400 260" class="project-thumb" aria-hidden="true">
+              <rect width="400" height="260" fill="#F4EFE2"/>
+              <rect x="30" y="30" width="150" height="200" rx="18" fill="#7A2E2E"/>
+              <rect x="46" y="52" width="118" height="10" rx="5" fill="#F4EFE2"/>
+              <rect x="46" y="72" width="90" height="8" rx="4" fill="#F4EFE2" opacity=".7"/>
+              <rect x="46" y="150" width="118" height="60" rx="10" fill="#F2A93C"/>
+              <rect x="200" y="30" width="170" height="90" rx="14" fill="#fff" stroke="#E3D8C4"/>
+              <circle cx="230" cy="70" r="18" fill="#7A2E2E"/>
+              <rect x="258" y="58" width="90" height="8" rx="4" fill="#12261B" opacity=".7"/>
+              <rect x="258" y="74" width="60" height="8" rx="4" fill="#7A2E2E" opacity=".6"/>
+              <rect x="200" y="132" width="170" height="98" rx="14" fill="#12261B"/>
+              <rect x="216" y="150" width="120" height="8" rx="4" fill="#F2A93C"/>
+              <rect x="216" y="168" width="100" height="7" rx="3.5" fill="#EFE6D8" opacity=".6"/>
+              <rect x="216" y="186" width="130" height="7" rx="3.5" fill="#EFE6D8" opacity=".4"/>
+              <rect x="216" y="202" width="70" height="16" rx="8" fill="#F2A93C"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="tag-row"><span class="tag">UI/UX</span><span class="tag">Figma</span><span class="tag">Wireframe</span></div>
+            <h3>App Café &amp; Restaurant</h3>
+            <p>Wireframing d'une application de commande pour un café-restaurant, du prototype papier à la
+              maquette Figma, avec une palette 60/30/10 crème, terracotta et rouge cerise.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <svg viewBox="0 0 400 260" class="project-thumb" aria-hidden="true">
+              <rect width="400" height="260" fill="#12261B"/>
+              <rect x="30" y="30" width="340" height="200" rx="12" fill="#0B1A12"/>
+              <rect x="46" y="46" width="150" height="70" rx="8" fill="#1E3A2A"/>
+              <path d="M56 96l20-24 16 14 26-30" stroke="#F2A93C" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="212" y="46" width="140" height="70" rx="8" fill="#1E3A2A"/>
+              <rect x="228" y="60" width="14" height="42" rx="3" fill="#F2A93C"/>
+              <rect x="248" y="76" width="14" height="26" rx="3" fill="#EFE6D8" opacity=".7"/>
+              <rect x="268" y="66" width="14" height="36" rx="3" fill="#F2A93C" opacity=".6"/>
+              <rect x="288" y="82" width="14" height="20" rx="3" fill="#EFE6D8" opacity=".5"/>
+              <rect x="46" y="132" width="306" height="80" rx="8" fill="#1E3A2A"/>
+              <circle cx="70" cy="172" r="10" fill="#F2A93C"/>
+              <circle cx="100" cy="172" r="10" fill="#EFE6D8" opacity=".8"/>
+              <circle cx="130" cy="172" r="10" fill="#3E5C48"/>
+              <rect x="160" y="154" width="170" height="8" rx="4" fill="#EFE6D8" opacity=".6"/>
+              <rect x="160" y="172" width="130" height="8" rx="4" fill="#EFE6D8" opacity=".4"/>
+              <rect x="160" y="190" width="80" height="14" rx="7" fill="#F2A93C"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="tag-row"><span class="tag">Riemann</span><span class="tag">Prometheus</span><span class="tag">Grafana</span></div>
+            <h3>Supervision d'infrastructure</h3>
+            <p>Projet académique (Sujet 7) : système de supervision temps réel avec Riemann, Collectd,
+              Prometheus, Grafana et Alertmanager, déployé sur 3 machines virtuelles Debian 13.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARCOURS ============ -->
+  <section class="section" id="parcours">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">— Formation &amp; expérience</span>
+        <h2 class="section-title">Mon <span class="accent-italic">parcours</span></h2>
+      </div>
+
+      <div class="parcours-grid">
+        <div class="parcours-card">
+          <span class="parcours-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3L2 8l10 5 10-5-10-5z" stroke="#12261B" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5" stroke="#12261B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Formation</h3>
+          <div class="parcours-item">
+            <span class="parcours-date">Licence obtenue</span>
+            <h4>MIAGE</h4>
+            <p>Institut Burkinabé des Arts et Métiers (IBAM) — Méthodes Informatiques
+              Appliquées à la Gestion des Entreprises</p>
+          </div>
+        </div>
+
+        <div class="parcours-card">
+          <span class="parcours-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="#12261B" stroke-width="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="#12261B" stroke-width="2"/></svg>
+          </span>
+          <h3>Expérience pratique</h3>
+          <div class="parcours-item">
+            <span class="parcours-date">Projet tuteuré</span>
+            <h4>PLAGIAT-IBAM</h4>
+            <p>Conception et rédaction du rapport de stage associé, du cahier des charges
+              à l'architecture 2TUP/UML.</p>
+          </div>
+          <div class="parcours-item">
+            <span class="parcours-date">Hackathons</span>
+            <h4>Youth Connekt Sahel &amp; CIF</h4>
+            <p>Participation à des hackathons d'innovation régionaux : dossier SaheLink
+              et candidature DigiCoop-WA+.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-copy">
+        <span class="section-kicker">— Contact</span>
+        <h2 class="section-title">Discutons de <span class="accent-italic">votre projet</span></h2>
+        <p class="about-text">
+          Une idée d'application, un projet web à concrétiser ? Parlons-en — je réponds
+          généralement sous 24 à 48h.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#12261B" stroke-width="1.8"/></svg></span>
+            <span>+226 60274111</span>
+          </li>
+          <li>
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="#12261B" stroke-width="1.8"/><path d="M4 6l8 7 8-7" stroke="#12261B" stroke-width="1.8"/></svg></span>
+            <span>elodieo821@gmail.com</span>
+          </li>
+          <li>
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="#12261B" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="#12261B" stroke-width="1.8"/></svg></span>
+            <span>Ouagadougou, Burkina Faso</span>
+          </li>
+          <li>
+            <span class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 3.13a4 4 0 010 7.75" stroke="#12261B" stroke-width="1.8"/><path d="M13 8a4 4 0 10-4-4 4 4 0 004 4z" stroke="#12261B" stroke-width="1.8"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2" stroke="#12261B" stroke-width="1.8"/></svg></span>
+            <span>github.com/votre-profil</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Votre nom *</label>
+            <input type="text" id="name" name="name" placeholder="Ex : Jean Dupont" required>
+            <span class="field-error">Merci d'indiquer votre nom.</span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+            <span class="field-error">Merci d'indiquer un email valide.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro">
+          </div>
+          <div class="form-field">
+            <label for="interest">Je suis intéressé(e) par *</label>
+            <select id="interest" name="interest" required>
+              <option value="" selected disabled>Sélectionner</option>
+              <option>Développement Web</option>
+              <option>Développement Mobile</option>
+              <option>Design UI/UX</option>
+              <option>Autre demande</option>
+            </select>
+            <span class="field-error">Merci de sélectionner une option.</span>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="message">Votre message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ici…" required></textarea>
+          <span class="field-error">Merci de décrire votre projet.</span>
+        </div>
+        <button type="submit" class="btn btn-pill btn-dark" id="submitBtn">
+          Envoyer
+          <span class="btn-icon-circle"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <h2>Restons <span class="accent-italic">en contact.</span></h2>
+    <a href="#contact" class="btn btn-pill btn-gold">
+      Me contacter
+      <span class="btn-icon-circle btn-icon-circle-dark"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </div>
+
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo-footer">
+        <span class="logo-mark">EO</span>
+        <span class="logo-text">Elodie<span class="dot">.</span></span>
+      </a>
+      <p>Développeuse full-stack basée à Saaba, spécialisée en développement
+        web (Django, React.js) et mobile (Flutter).</p>
+      <div class="social-row">
+        <a href="#" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.4 9.4 0 015 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.66.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0012 2z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.94 5a2 2 0 11-4-.002 2 2 0 014 .002zM7 8.48H3V21h4V8.48zM13.5 8.48h-3.83V21h3.83v-6.36c0-1.68.32-3.31 2.4-3.31s2.05 1.92 2.05 3.42V21H22v-7.02c0-3.68-.8-6.5-5.1-6.5-2.06 0-3.44 1.13-4 2.2h-.05V8.48H13.5z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Behance"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h6.5c2 0 3.4 1 3.4 2.9 0 1.13-.6 1.95-1.5 2.35 1.24.35 2 1.4 2 2.85 0 2.1-1.7 3.4-4 3.4H4V7zm2 2.4v2.5h3.7c.9 0 1.5-.5 1.5-1.3s-.6-1.2-1.5-1.2H6zm0 4.3v2.7h4c.95 0 1.65-.55 1.65-1.35S11 15.7 10 15.7H6zM14.9 8h5.6v1.3h-5.6V8zm5.9 6.05c0-2.5-1.5-4.1-3.85-4.1-2.3 0-3.95 1.7-3.95 4.25 0 2.6 1.6 4.2 4 4.2 1.85 0 3.15-.9 3.6-2.4h-2.05c-.25.55-.8.85-1.5.85-1.05 0-1.75-.65-1.85-1.85h5.55c.03-.25.05-.6.05-.95zm-5.55-.75c.15-1.05.8-1.6 1.7-1.6.95 0 1.55.6 1.65 1.6h-3.35z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <a href="#top">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="#contact">elodieo821@gmail.com</a>
+      <a href="#contact">+226 60274111</a>
+      <span>Ouagadougou, Burkina Faso</span>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Elodie Ouédraogo. Tous droits réservés.</span>
+    <span class="footer-legal"><a href="#">Conditions d'utilisation</a> · <a href="#">Politique de confidentialité</a></span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({ publicKey: "7tFRkaZkfQEaOAT2B" }); // ← remplace par ta clé publique EmailJS
+</script>
+<script src="script.js"></script>
+</body>
+</html>
