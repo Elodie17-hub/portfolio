@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Révélation au scroll (fade + slide up) ---------- */
   const revealTargets = document.querySelectorAll(
-    '.service-card, .project-card, .parcours-card, .tool, .about-inner, .contact-inner, .section-head'
+    '.service-card, .case-study, .parcours-card, .skill-card, .about-inner, .contact-inner, .section-head'
   );
   revealTargets.forEach(el => el.classList.add('reveal'));
 
@@ -78,26 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.15 });
 
   revealTargets.forEach(el => revealObserver.observe(el));
-
-  /* ---------- Anneaux de compétences (remplissage animé) ---------- */
-  const RING_CIRCUMFERENCE = 214; // 2 * PI * 34 (rayon du cercle SVG)
-  const tools = document.querySelectorAll('.tool');
-
-  const toolObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const tool = entry.target;
-      const percent = parseInt(tool.dataset.percent, 10) || 0;
-      const ringFg = tool.querySelector('.ring-fg');
-      if (ringFg) {
-        const offset = RING_CIRCUMFERENCE - (RING_CIRCUMFERENCE * percent) / 100;
-        requestAnimationFrame(() => { ringFg.style.strokeDashoffset = offset; });
-      }
-      toolObserver.unobserve(tool);
-    });
-  }, { threshold: 0.4 });
-
-  tools.forEach(tool => toolObserver.observe(tool));
 
   /* ---------- Formulaire de contact ---------- */
   const form = document.getElementById('contactForm');
@@ -124,36 +104,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!fieldValid) isValid = false;
       });
 
-          if (!isValid) {
+      if (!isValid) {
         formNote.textContent = "Merci de corriger les champs signalés ci-dessus.";
         formNote.classList.remove('success');
         return;
       }
 
+      // Aucun backend connecté pour l'instant : confirmation visuelle uniquement.
+      // Pour un envoi réel, relier ce formulaire à un service (ex : EmailJS,
+      // Formspree) ou à une route backend qui traite les données du formulaire.
       submitBtn.disabled = true;
       submitBtn.style.opacity = '0.7';
-      formNote.textContent = "Envoi en cours…";
-      formNote.classList.remove('success');
 
-      // Remplace ces deux identifiants par ceux de ton compte EmailJS
-      const SERVICE_ID = "service_83jsouw";
-      const TEMPLATE_ID = "template_eq4dctp";
+      formNote.textContent = "Message prêt à être envoyé — connectez le formulaire à votre service d'envoi pour le transmettre.";
+      formNote.classList.add('success');
 
-      emailjs.sendForm(service_83jsouw, template_eq4dctp, form)
-        .then(() => {
-          formNote.textContent = "Merci ! Votre message a bien été envoyé.";
-          formNote.classList.add('success');
-          form.reset();
-        })
-        .catch((error) => {
-          console.error("Erreur EmailJS :", error);
-          formNote.textContent = "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.";
-          formNote.classList.remove('success');
-        })
-        .finally(() => {
-          submitBtn.disabled = false;
-          submitBtn.style.opacity = '1';
-        });
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+      }, 1200);
     });
 
     form.querySelectorAll('input, select, textarea').forEach(field => {
@@ -163,4 +132,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
 });
