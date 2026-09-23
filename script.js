@@ -110,9 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Aucun backend connecté pour l'instant : confirmation visuelle uniquement.
-      // Pour un envoi réel, relier ce formulaire à un service (ex : EmailJS,
-      // Formspree) ou à une route backend qui traite les données du formulaire.
       submitBtn.disabled = true;
       submitBtn.style.opacity = '0.7';
 
